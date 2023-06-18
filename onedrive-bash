@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Run your command here and capture the stdout
+echo newscript
+
+onedrive -m | while read line; do
+  echo $line
+  
+  # Check if the stdout contains the desired output
+  if [[ $line =~ "Internet connectivity issue" ]]; then
+    # If the stdout does not contain the desired output, rerun the command
+    killall onedrive
+    sleep 10
+    ${HOME}/.dotfiles/onedrive-bash
+  fi
+done
+
+echo done
