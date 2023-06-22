@@ -10,6 +10,7 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 
 # ========== PERSONAL CONFIG ==========
+neofetch
 alias vim=nvim
 alias vi=nvim
 alias l="ls -lah"
