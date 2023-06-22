@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # To be run as the non-root user
-ln -sv ${HOME}/.dotfiles/autorandr ${HOME}/.config/autorandr
-ln -sv ${HOME}/.dotfiles/awesome ${HOME}/.config/awesome
-ln -sv ${HOME}/.dotfiles/.zshrc ${HOME}/.zshrc
-ln -sv ${HOME}/.dotfiles/.gitconfig ${HOME}/.gitconfig
+rm -rf ${HOME}/.config/autorandr ${HOME}/.config/awesome
+ln -sfv ${HOME}/.dotfiles/autorandr ${HOME}/.config/autorandr
+ln -sfv ${HOME}/.dotfiles/awesome ${HOME}/.config/awesome
+ln -sfv ${HOME}/.dotfiles/.zshrc ${HOME}/.zshrc
+ln -sfv ${HOME}/.dotfiles/.gitconfig ${HOME}/.gitconfig
