@@ -12,4 +12,4 @@ fi
 # ========== PERSONAL CONFIG ==========
 alias vim=nvim
 alias vi=nvim
-alias l="ls -la"
+alias l="ls -lah"
