@@ -8,3 +8,8 @@ cd ${HOME}/Downloads
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
+cd ${HOME}/Downloads
+rm -rf paru
+
+# AUR
+paru -S microsoft-edge-beta-bin onedrive-abraunegg --needed

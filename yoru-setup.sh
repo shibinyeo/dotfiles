@@ -8,7 +8,7 @@ jq inotify-tools polkit-gnome xdotool xclip gpick ffmpeg blueman redshift \
 pipewire-alsa pipewire-pulse alsa-utils brightnessctl feh maim --needed
 
 # AUR
-paru -S microsoft-edge-beta-bin awesome-git --needed
+paru -S awesome-git --needed
 
 # Install yoru
 git clone --depth 1 --recurse-submodules https://github.com/rxyhn/yoru.git

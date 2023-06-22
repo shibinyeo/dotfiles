@@ -1,0 +1,152 @@
+[control-center]
+last-panel='keyboard'
+window-state=(980, 640, true)
+
+[deja-dup]
+backend='google'
+prompt-check='2023-06-22T16:45:54.332110Z'
+
+[desktop/a11y/applications]
+screen-magnifier-enabled=false
+
+[desktop/a11y/magnifier]
+mag-factor=11.0
+
+[desktop/app-folders/folders/accessories]
+apps=['yad-icon-browser.desktop', 'de.haeckerfelix.Fragments.desktop']
+categories=['Utility']
+excluded-apps=['gnome-layouts.desktop', 'manjaro-documentation.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Maps.desktop']
+name='Accessories'
+translate=true
+
+[desktop/app-folders/folders/games]
+categories=['Game']
+name='Games'
+translate=true
+
+[desktop/app-folders/folders/office]
+categories=['Office']
+name='Office'
+translate=true
+
+[desktop/app-folders/folders/system-tools]
+apps=['qvidcap.desktop', 'qv4l2.desktop', 'bssh.desktop', 'bvnc.desktop', 'hp-uiscan.desktop']
+categories=['System', 'Settings']
+excluded-apps=['org.manjaro.pamac.manager.desktop']
+name='System Tools'
+translate=true
+
+[desktop/input-sources]
+sources=[('xkb', 'us')]
+xkb-options=@as []
+
+[desktop/interface]
+enable-hot-corners=false
+toolkit-accessibility=false
+
+[desktop/notifications]
+application-children=['org-telegram-desktop']
+
+[desktop/notifications/application/org-telegram-desktop]
+application-id='org.telegram.desktop.desktop'
+
+[desktop/screensaver]
+lock-delay=uint32 300
+lock-enabled=true
+
+[desktop/session]
+idle-delay=uint32 900
+
+[desktop/wm/keybindings]
+close=['<Super>Escape']
+cycle-group=@as []
+cycle-group-backward=@as []
+maximize=['<Super>Up']
+switch-applications=@as []
+switch-applications-backward=@as []
+switch-group=@as []
+switch-group-backward=@as []
+switch-input-source=@as []
+switch-input-source-backward=@as []
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
+
+[desktop/wm/preferences]
+num-workspaces=5
+
+[evolution-data-server]
+migrated=true
+
+[file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
+[file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
+[mutter]
+dynamic-workspaces=false
+
+[mutter/wayland/keybindings]
+restore-shortcuts=@as []
+
+[nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[nautilus/window-state]
+initial-size=(890, 550)
+
+[settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
+help=@as []
+home=['<Super>f']
+magnifier=['<Super>z']
+magnifier-zoom-in=@as []
+magnifier-zoom-out=@as []
+screenreader=@as []
+www=['<Super>w']
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>Return'
+command='gnome-terminal'
+name='Terminal'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>t'
+command='telegram-desktop'
+name='Telegram'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Shift><Super>o'
+command='obsidian'
+name='Obsidian'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom3]
+binding='Print'
+command='flameshot gui --clipboard --accept-on-select'
+name='Flameshot'
+
+[shell]
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Terminal.desktop', 'org.manjaro.pamac.manager.desktop', 'calamares.desktop', 'manjaro-architect.desktop']
+welcome-dialog-last-shown-version='99.9'
+
+[shell/keybindings]
+show-screen-recording-ui=@as []
+show-screenshot-ui=@as []
+
+[shell/world-clocks]
+locations=@av []
+
+[terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+use-theme-colors=false
