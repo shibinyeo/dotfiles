@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Official Repositories
-sudo pacman -S caffeine-ng tigervnc flameshot neovim obsidian virt-manager autorandr bash-completion base-devel telegram-desktop obs-studio libreoffice-still --needed
+sudo pacman -S caffeine-ng tigervnc flameshot neovim obsidian virt-manager autorandr bash-completion base-devel telegram-desktop obs-studio libreoffice-still screen \
+--needed
 
 # Install paru (use "rust")
 cd ${HOME}/Downloads
