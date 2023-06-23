@@ -1,0 +1,10 @@
+{
+    "defaults": {
+       "pickedColorList": [],
+       "colorMainVariation": "RGB",
+       "magnifierStatus": "true",
+       "openGrabbingScreenHotkey": 79,
+       "copyTextHotkey": 80,
+       "closePanelHotkey": 75
+    }
+}

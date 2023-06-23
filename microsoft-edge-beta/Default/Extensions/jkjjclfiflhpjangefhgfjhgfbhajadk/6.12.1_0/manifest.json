@@ -1,0 +1,47 @@
+{
+   "background": {
+      "scripts": [ "background/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "icons/icon_min.png",
+         "64": "icons/icon.png"
+      },
+      "default_popup": "popup/index.html"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "description": "__MSG_openPopupDescription__",
+         "suggested_key": {
+            "default": "Ctrl+Shift+L"
+         }
+      },
+      "exportSessions": {
+         "description": "__MSG_exportSessionsDescription__"
+      },
+      "saveAllWindow": {
+         "description": "__MSG_saveAllWindowDescription__"
+      },
+      "saveCurrentWindow": {
+         "description": "__MSG_saveCurrentWindowDescription__"
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "icons": {
+      "16": "icons/icon_min.png",
+      "64": "icons/icon.png"
+   },
+   "incognito": "spanning",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlKB49PhZAAdo9Ud4a7sDeDLOhb0EZ8/ti9XkjL/tW5/gQ4IDgrRvm25CoI+jBSS9gWQynr25KICzhKmHmKRyqyxTTyn2Tkx9WYeWRQF5tZGCK7XRceuiXvVvjf5oeo8Q/0lNQw81xKeFODwcMXxCiva1ia1Xd6iErdy7oIaoOZawKNSwg14L6sG6JAni0uYejJOEOP4e89piuAD/nJLL2CPaA6RWQrJrrHS8lCQRcLVPrJVzjSj93KXaK9ENxxKiyrVFy7b50ATM1EVGI8cFGa11//8iAbpl0IzyBHXKHZRrZQ0s81Kg0RJNtKONniE2GlzQzuKpRedX+zzuFTSXmwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extName__",
+   "optional_permissions": [ "https://www.googleapis.com/*" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options/index.html"
+   },
+   "permissions": [ "storage", "unlimitedStorage", "tabs", "downloads", "identity" ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "6.12.1"
+}

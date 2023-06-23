@@ -1,0 +1,127 @@
+{
+   "aiProvider": {
+      "description": "Used for selecting the AI provider",
+      "message": "AI Provider"
+   },
+   "apiKey": {
+      "description": "Used for selecting the API Key",
+      "message": "API Key"
+   },
+   "appDesc": {
+      "description": "The descirption of the web-extension (132)",
+      "message": "Summarize any webpage or Youtube video with ChatGPT. Get the summary & key takeaways of any article! Summarizer * Summaries * GPT-4"
+   },
+   "appName": {
+      "description": "The name of the web-extension (45)",
+      "message": "ChatGPT » summarize everything!"
+   },
+   "chat": {
+      "description": "Tab label",
+      "message": "Chat"
+   },
+   "chatGPTProviderDescription": {
+      "description": "Description of the ChatGPT API Provider",
+      "message": "The API that powers ChatGPT webapp, free, but sometimes unstable"
+   },
+   "close": {
+      "description": "Used for closing the extension popup",
+      "message": "Close"
+   },
+   "copy": {
+      "description": "Used for copying text to clipboard",
+      "message": "Copy"
+   },
+   "defaultQuestion": {
+      "description": "The default question used for ChatGPT",
+      "message": "Your output should use the following template:\n### Summary\n### Facts\n- [Emoji] Bulletpoint\n\nYour task is to summarize the text I give you in up to seven concise  bulletpoints and start with a short, high-quality summary. Pick a suitable emoji for every bullet point. Your response should be in {{SELECTED_LANGUAGE}}. If the provided URL is functional and not a YouTube video, use the text from the {{URL}}. However, if the URL is not functional or is a YouTube video, use the following text: {{CONTENT}}."
+   },
+   "extractingPageContent": {
+      "description": "Status message used when extracting page content",
+      "message": "Extracting page content..."
+   },
+   "failedToLoadResponseFromChatGPT": {
+      "description": "Status message used when failed to load response from ChatGPT",
+      "message": "Failed to load response from ChatGPT"
+   },
+   "info": {
+      "message": "Info"
+   },
+   "installSuccess": {
+      "description": "Success message after installing the extension",
+      "message": "Ready! Summarize any webpage or Youtube video with one click using ChatGPT Suite! Contact us for any \u003Ca>questions or feedback\u003C/a>. Happy summarizing!"
+   },
+   "loading": {
+      "description": "Status message used when loading",
+      "message": "Loading..."
+   },
+   "model": {
+      "description": "Used for selecting the model",
+      "message": "Model"
+   },
+   "moreInfo": {
+      "description": "Used for opening a new modal with more info",
+      "message": "More Info"
+   },
+   "openAIProviderDescription": {
+      "description": "Description of the OpenAI API Provider",
+      "message": "OpenAI official API, more stable, charge by usage"
+   },
+   "options": {
+      "description": "Used for opening the extension options",
+      "message": "Options"
+   },
+   "pinExtensionTutorial": {
+      "description": "Tutorial message for pinning the extension to the toolbar",
+      "message": "Pin this extension to your toolbar to get started."
+   },
+   "question": {
+      "description": "Used for selecting the question",
+      "message": "Question"
+   },
+   "rateExtensionInWebstore": {
+      "message": "Enjoy this extension? Give us a 5-star rating at the \u003Ca>Chrome Web Store\u003C/a>"
+   },
+   "refreshOpenAILogin": {
+      "message": "Please login and pass Cloudflare check at \u003Ca>chat.openai.com\u003C/a>"
+   },
+   "requestOpenAIProvider": {
+      "description": "Status message when failed to load response from OpenAI second time in a row",
+      "message": "OpenAI requires passing a security check every once in a while. If this keeps happening, change AI provider to OpenAI API in the extension options."
+   },
+   "reset": {
+      "description": "Used for resetting the extension options",
+      "message": "Reset"
+   },
+   "retry": {
+      "description": "Used invalidating a ChatGPT answer",
+      "message": "Retry"
+   },
+   "save": {
+      "description": "Used for saving the extension options",
+      "message": "Save"
+   },
+   "summarize": {
+      "description": "Tab label",
+      "message": "Summarize"
+   },
+   "thankYouForInstalling": {
+      "description": "Thank you message after installing the extension",
+      "message": "Thank you for installing"
+   },
+   "tryItNow": {
+      "description": "Action button used after successful installation",
+      "message": "Try it now"
+   },
+   "voteDown": {
+      "description": "Used for sending Feedback to ChatGPT",
+      "message": "Vote Down"
+   },
+   "voteUp": {
+      "description": "Used for sending Feedback to ChatGPT",
+      "message": "Vote Up"
+   },
+   "waitingForChatGPTResponse": {
+      "description": "Status message used when waiting for ChatGPT response",
+      "message": "Waiting for ChatGPT response..."
+   }
+}

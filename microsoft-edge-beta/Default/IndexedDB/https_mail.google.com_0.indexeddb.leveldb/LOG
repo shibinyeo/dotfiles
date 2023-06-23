@@ -1,0 +1,6 @@
+2023/06/23-14:31:07.570 7cb Reusing MANIFEST /home/shibin/.config/microsoft-edge-beta/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/23-14:31:07.570 7cb Recovering log #3
+2023/06/23-14:31:07.574 7cb Reusing old log /home/shibin/.config/microsoft-edge-beta/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
+2023/06/23-14:31:19.940 7cb Level-0 table #5: started
+2023/06/23-14:31:19.954 7cb Level-0 table #5: 1721810 bytes OK
+2023/06/23-14:31:19.966 7cb Delete type=0 #3

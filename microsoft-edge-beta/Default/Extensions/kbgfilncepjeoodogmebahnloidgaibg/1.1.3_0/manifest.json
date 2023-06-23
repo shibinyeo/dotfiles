@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "eventPage.js" ]
+   },
+   "browser_action": {
+      "default_icon": "jf_icon16.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "jquery-3.1.0.min.js", "bililiteRange.js", "jquery.sendkeys.js", "content.js" ],
+      "matches": [ "*://*/*" ]
+   } ],
+   "description": "The most advanced autofill for job application forms!",
+   "icons": {
+      "128": "jf_icon128.png",
+      "16": "jf_icon16.png",
+      "48": "jf_icon48_2.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArbIIdrnGYOB0ySvqDvgzJ6N2T4pn7XUZRt+7D3L5hDT03RGjeTT2BuM1fsReWFFBDJx8DtTyxdq2ddmH1Q54jBkw3/qZ0/2GtE6WHmwDLmtwlmgJMzrsXeOCdw8Gg93aORqoK84mhxcXeWJ6hbHxPju5TvjdO5C6nRg/XoFDrht9aKhabOwsupGXNXljqrtH2vi3t43JQSZFjswEh6wuq1mkaqek3rdy7jr1xfZvO/HqZTe9K0QTyy2+FTMc2bR/g33mbRuOU5Cakq7rDoHrxuSbCUn+BAO+a0Y9DL9pf8iF1d4z/kAFVzW8MANVvFZlT5TL2dre1GKTv5tuJu0mAQIDAQAB",
+   "manifest_version": 2,
+   "name": "AutoFill Job Application Forms",
+   "options_page": "options.html",
+   "permissions": [ "storage", "*://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.3"
+}

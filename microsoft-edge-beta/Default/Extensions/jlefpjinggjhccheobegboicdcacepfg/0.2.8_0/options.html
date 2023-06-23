@@ -1,0 +1,228 @@
+﻿
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/material.min.css" />
+  <link href="styles/options.css" rel="stylesheet">
+  <title>ColorFish Options</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>ColorFish Options</h1>
+
+    <div class="inner-wrapper">
+      <div class="status-text">Settings saved successfully. Changes will be visible after the next conversion.</div>
+      <div class="file-access-status">
+        <h2>Color Pick on Local Images and PDFs</h2>
+        <div class="file-access-main">
+          <p>With ColorFish you can also Color Pick on local images and PDF. You only need to drag and drop them into your browser, and then use ColorPicker on it. For this to work, you need to allow ColorFish access to file URLs. You do this in Chrome extension settings for ColorFish.</p>
+
+          <div class="file-access-status-error">
+            <span>Currently access to file URLs is not enabled. <a target="_blank" href="https://ui.vision/rd/colorfish?help=fileurl">Show me how to change this</a> </span>
+          </div>
+
+          <div class="file-access-status-done">
+            <span>Access to file URLs is enabled.</span>
+          </div>
+        </div>
+      </div>
+      <div class="xmodule-item" id="xmodule-item">
+        <div class="mdl-grid subtitle">
+          <h2>Desktop Color Picker</h2>
+        </div>
+        <div class="xmodule-title">
+          <span><b>Desktop Screenshot XModule</b> for Desktop OCR</span>
+          <a href="https://ui.vision/rd/colorfish?help=desktop" target="_blank">More Info</a>
+          <button id="check-update-xmodule" type="button" class="ant-btn ant-btn-primary"><span>Test it</span>
+          </button></div><div class="xmodule-status"><label>Status:&nbsp;</label>
+              <div class="status-box"><span style="color: red;">Not Installed</span>
+                 <a  target="_blank" href="https://ui.vision/rd/colorfish?help=download">Download it</a>
+              </div>
+        </div>
+      </div>
+
+      <div class="mdl-grid subtitle">
+        <h2>Shortcuts</h2>
+      </div>
+      <div class="mdl-grid options-container hotkey-options">
+        <div class="mdl-cell mdl-cell--5-col label">
+          <label title="Open grabbing screen hotkey">Color Pick Recapture</label>
+        </div>
+        <div class="mdl-cell mdl-cell--7-col">
+          CTRL + SHIFT +
+          <select id="openHotkey" class="hotkeySelector">
+            <option value="48">0</option>
+            <option value="49">1</option>
+            <option value="50">2</option>
+            <option value="51">3</option>
+            <option value="52">4</option>
+            <option value="53">5</option>
+            <option value="54">6</option>
+            <option value="55">7</option>
+            <option value="56">8</option>
+            <option value="57">9</option>
+            <option value="65">a</option>
+            <option value="66">b</option>
+            <option value="67">c</option>
+            <option value="68">d</option>
+            <option value="69">e</option>
+            <option value="70">f</option>
+            <option value="71">g</option>
+            <option value="72">h</option>
+            <option value="73">i</option>
+            <option value="74">j</option>
+            <option value="75">k</option>
+            <option value="76">l</option>
+            <option value="77">m</option>
+            <option value="78">n</option>
+            <option value="79">o</option>
+            <option value="80">p</option>
+            <option value="81">q</option>
+            <option value="82">r</option>
+            <option value="83">s</option>
+            <option value="84">t</option>
+            <option value="85">u</option>
+            <option value="86">v</option>
+            <option value="87">w</option>
+            <option value="88">x</option>
+            <option value="89">y</option>
+            <option value="90">z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mdl-grid options-container hotkey-options">
+        <div class="mdl-cell mdl-cell--5-col label">
+          <label title="Close panel hotkey">Deactivate Color Picker</label>
+        </div>
+        <div class="mdl-cell mdl-cell--7-col">
+          CTRL + SHIFT +
+          <select id="closeHotkey" class="hotkeySelector">
+            <option value="48">0</option>
+            <option value="49">1</option>
+            <option value="50">2</option>
+            <option value="51">3</option>
+            <option value="52">4</option>
+            <option value="53">5</option>
+            <option value="54">6</option>
+            <option value="55">7</option>
+            <option value="56">8</option>
+            <option value="57">9</option>
+            <option value="65">a</option>
+            <option value="66">b</option>
+            <option value="67">c</option>
+            <option value="68">d</option>
+            <option value="69">e</option>
+            <option value="70">f</option>
+            <option value="71">g</option>
+            <option value="72">h</option>
+            <option value="73">i</option>
+            <option value="74">j</option>
+            <option value="75">k</option>
+            <option value="76">l</option>
+            <option value="77">m</option>
+            <option value="78">n</option>
+            <option value="79">o</option>
+            <option value="80">p</option>
+            <option value="81">q</option>
+            <option value="82">r</option>
+            <option value="83">s</option>
+            <option value="84">t</option>
+            <option value="85">u</option>
+            <option value="86">v</option>
+            <option value="87">w</option>
+            <option value="88">x</option>
+            <option value="89">y</option>
+            <option value="90">z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mdl-grid options-container hotkey-options">
+        <div class="mdl-cell mdl-cell--5-col label">
+          <label title="Close panel hotkey">Copy color to clipboard</label>
+        </div>
+        <div class="mdl-cell mdl-cell--7-col">
+          CTRL + SHIFT +
+          <select id="copyHotkey" class="hotkeySelector">
+            <option value="48">0</option>
+            <option value="49">1</option>
+            <option value="50">2</option>
+            <option value="51">3</option>
+            <option value="52">4</option>
+            <option value="53">5</option>
+            <option value="54">6</option>
+            <option value="55">7</option>
+            <option value="56">8</option>
+            <option value="57">9</option>
+            <option value="65">a</option>
+            <option value="66">b</option>
+            <option value="67">c</option>
+            <option value="68">d</option>
+            <option value="69">e</option>
+            <option value="70">f</option>
+            <option value="71">g</option>
+            <option value="72">h</option>
+            <option value="73">i</option>
+            <option value="74">j</option>
+            <option value="75">k</option>
+            <option value="76">l</option>
+            <option value="77">m</option>
+            <option value="78">n</option>
+            <option value="79">o</option>
+            <option value="80">p</option>
+            <option value="81">q</option>
+            <option value="82">r</option>
+            <option value="83">s</option>
+            <option value="84">t</option>
+            <option value="85">u</option>
+            <option value="86">v</option>
+            <option value="87">w</option>
+            <option value="88">x</option>
+            <option value="89">y</option>
+            <option value="90">z</option>
+          </select>
+        </div>
+      </div>
+
+
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+          <div class="subscription">
+            <div class="text">🐟 ColorFish Newsletter</div>
+            <div class="text">We'll send you updates on new ColorFish releases that we're working on. We will not spam you. Scout's honor!</div>
+            <form action="https://a9t9.us11.list-manage.com/subscribe/post?u=ce17e59f5b68a2fd3542801fd&amp;id=b80e206910" method="post" name="mc-embedded-subscribe-form" target="_blank">
+              <label for="mce-EMAIL">Email address</label>
+              <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="">
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ce17e59f5b68a2fd3542801fd_62c9708e75" tabindex="-1" value=""></div>
+              <input id="mc-embedded-subscribe" type="submit" value="Subscribe to list" name="subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdl-grid options-container buttons">
+        <!--   <div class="mdl-cell mdl-cell--3-col label"></div>
+            <div class="mdl-cell mdl-cell--5-col button-cell">
+             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent btn btn-reset" title="Reset">Reset</button> -->
+        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent btn btn-save" title="Save">Save</button> -->
+        <!--</div>-->
+        <div class="mdl-cell mdl-cell--5-col label">
+          Questions? Ideas? Email us at: <a class="extension-link" href="mailto:team@ui.vision">team@ui.vision</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/material.min.js"></script>
+
+    <script src="scripts/options.js"></script>
+</body>
+
+</html>

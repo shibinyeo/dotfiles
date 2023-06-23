@@ -1,0 +1,14 @@
+2023/06/23-13:19:56.327 e2d Reusing MANIFEST /home/shibin/.config/microsoft-edge-beta/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/23-13:19:56.327 e2d Recovering log #4
+2023/06/23-13:19:56.327 e2d Reusing old log /home/shibin/.config/microsoft-edge-beta/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000004.log 
+2023/06/23-13:19:58.706 e3b Level-0 table #8: started
+2023/06/23-13:19:58.712 e3b Level-0 table #8: 105312 bytes OK
+2023/06/23-13:19:58.720 e3b Delete type=0 #4
+2023/06/23-13:19:58.720 e2d Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/06/23-13:19:58.720 e2d Manual compaction at level-1 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\xc8\x05\x00p\x00r\x00e\x00f\x00s' @ 951 : 1
+2023/06/23-13:19:58.720 e2d Compacting 1@1 + 1@2 files
+2023/06/23-13:19:58.726 e2d Generated table #9@1: 173 keys, 8092 bytes
+2023/06/23-13:19:58.726 e2d Compacted 1@1 + 1@2 files => 8092 bytes
+2023/06/23-13:19:58.738 e2d compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/06/23-13:19:58.739 e2d Delete type=2 #8
+2023/06/23-13:19:58.739 e2d Manual compaction at level-1 from '\x00\x08\x00\x00\xc8\x05\x00p\x00r\x00e\x00f\x00s' @ 951 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

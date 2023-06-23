@@ -1,0 +1,14 @@
+2023/06/23-14:59:16.769 7b8 Reusing MANIFEST /home/shibin/.config/microsoft-edge-beta/Default/IndexedDB/chrome-extension_igbncjcgfkfnfgbaieiimpfkobabmkce_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/23-14:59:16.769 7b8 Recovering log #14
+2023/06/23-14:59:16.769 7b8 Reusing old log /home/shibin/.config/microsoft-edge-beta/Default/IndexedDB/chrome-extension_igbncjcgfkfnfgbaieiimpfkobabmkce_0.indexeddb.leveldb/000014.log 
+2023/06/23-14:59:16.769 7b8 Delete type=2 #12
+2023/06/23-14:59:16.808 889 Level-0 table #19: started
+2023/06/23-14:59:16.815 889 Level-0 table #19: 904 bytes OK
+2023/06/23-14:59:16.827 889 Delete type=0 #14
+2023/06/23-14:59:16.827 7f2 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at '\x00\x07\x00\x00\x05' @ 243 : 1
+2023/06/23-14:59:16.827 7f2 Compacting 1@0 + 1@1 files
+2023/06/23-14:59:16.838 7f2 Generated table #20@0: 50 keys, 1452 bytes
+2023/06/23-14:59:16.838 7f2 Compacted 1@0 + 1@1 files => 1452 bytes
+2023/06/23-14:59:16.846 7f2 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/06/23-14:59:16.846 7f2 Delete type=2 #19
+2023/06/23-14:59:16.846 7b8 Manual compaction at level-0 from '\x00\x07\x00\x00\x05' @ 243 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
