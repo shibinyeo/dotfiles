@@ -13,4 +13,4 @@ cd ${HOME}/Downloads
 rm -rf paru
 
 # AUR
-paru -S microsoft-edge-beta-bin onedrive-abraunegg --needed
+paru -S microsoft-edge-beta-bin onedrive-abraunegg spotify-adblock --needed
