@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Official Repositories
-sudo pacman -S caffeine-ng tigervnc flameshot neovim obsidian virt-manager autorandr bash-completion base-devel telegram-desktop obs-studio libreoffice-still screen neofetch xdotool zoom arandr tree \
+sudo pacman -S caffeine-ng tigervnc flameshot neovim obsidian virt-manager autorandr bash-completion base-devel telegram-desktop obs-studio libreoffice-still screen neofetch xdotool zoom tree python python-pip \
 --needed
 
 # Install paru (use "rust")
