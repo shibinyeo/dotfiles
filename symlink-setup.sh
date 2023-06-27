@@ -2,7 +2,7 @@
 
 # To be run as the non-root user
 rm -rf ${HOME}/.config/autorandr
-ln -sfv ${HOME}/.dotfiles/autorandr ${HOME}/.config/autorandr
+ln -sfv ${HOME}/.dotfiles/autorandr-configs/autorandr ${HOME}/.config/autorandr
 
 #rm -rf ${HOME}/.config/awesome
 #ln -sfv ${HOME}/.dotfiles/awesome ${HOME}/.config/awesome
