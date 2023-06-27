@@ -9,8 +9,11 @@ ln -sfv ${HOME}/.dotfiles/autorandr ${HOME}/.config/autorandr
 
 ln -sfv ${HOME}/.dotfiles/.zshrc ${HOME}/.zshrc
 sudo ln -sfv ${HOME}/.dotfiles/.zshrc /root/.zshrc
+sudo chsh -s /bin/zsh root
 
 ln -sfv ${HOME}/.dotfiles/.gitconfig ${HOME}/.gitconfig
 sudo ln -sfv ${HOME}/.dotfiles/.gitconfig /root/.gitconfig
 
 sudo ln -sfv ${HOME}/.dotfiles/onedrive.service /etc/systemd/system/onedrive.service
+
+
