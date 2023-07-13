@@ -19,8 +19,15 @@ super + alt + Return
 super + @space
 	OpenApps --menu
 
-# Theme Selector
+# Speech Recognition with nerd-dictation open source project
 alt + @space
+    if pidof parec; then nerd-dictation end; else nerd-dictation begin; fi
+
+#alt + @space
+#    if pidof parec; then nerd-dictation suspend; else nerd-dictation resume; fi
+
+# Theme Selector
+alt + shift + @space
 	RiceSelector
 
 # Scratchpad
@@ -75,7 +82,8 @@ super + alt + r
 
 # close and kill
 super + Escape
-	bspc node -{c,k}
+    bspc node -c
+	#bspc node -k
 
 ####
 
@@ -195,3 +203,4 @@ XF86Audio{RaiseVolume,LowerVolume,Mute}
 # Music Control
 XF86Audio{Next,Prev,Play,Stop}
 	MediaControl {--next,--previous,--toggle,--stop}
+

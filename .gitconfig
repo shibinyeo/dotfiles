@@ -1,3 +1,5 @@
 [user]
 	email = yeoshibin97@gmail.com
 	name = shibinyeo
+[http]
+	postBuffer = 157286400
