@@ -48,6 +48,15 @@ for file in ${folder_path}/+\ Cards/*; do
   fi
 done
 
+for file in ${folder_path}/+\ Extras/Supporting\ Assets/*; do
+  if [[ -f $file && $(head -n 1 "$file") == '---' ]]; then
+
+      # Add a new line into the metadata
+      sed -i "2idg-publish: true" "$file"
+
+  fi
+done
+
 # b. for those without any metadata
 
 for file in ${folder_path}/+\ Atlas/*; do
@@ -68,6 +77,15 @@ for file in ${folder_path}/+\ Cards/*; do
   fi
 done
 
+for file in ${folder_path}/+\ Extras/Supporting\ Assets/*; do
+  if [[ -f $file && $(head -n 1 "$file") != '---' ]]; then
+
+    # Add three lines at the start of the file
+    { echo "---"; echo "dg-publish: true"; echo "---"; cat "$file"; } > temp && mv -v temp "$file"
+
+  fi
+done
+
 # ========== ADD DG-HOME ==========
 sed -i "2idg-home: true" "${HOME}/Obsidian-Publish/+ Atlas/Technical Knowledge MOC.md"
 
@@ -75,6 +93,9 @@ sed -i "2idg-home: true" "${HOME}/Obsidian-Publish/+ Atlas/Technical Knowledge M
 # Note: Settings are moved from the main vault
 cp -rv "${HOME}/OneDrive/Archives/RHCE Exam/.obsidian" ${HOME}/Obsidian-Publish/
 rm -rfv ${HOME}/Obsidian-Publish/.obsidian/workspace.json
+
+# ========== FINAL STEPS ==========
+# Wait for awhile for everything to index, Open Obsidian-Publish folder as a vault, run "publish multiple"; apply appearance settings
 
 # -------------------------------------------------------------------
 # ========== 2B) QUARTZ ==========
