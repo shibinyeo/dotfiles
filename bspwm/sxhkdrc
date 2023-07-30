@@ -49,7 +49,7 @@ super + {w,f,r,o,s,v,k}
 	 OpenApps --music}
 
 super + {t,a}
-    {if ! xdo activate -N TelegramDesktop; then telegram-desktop; fi, \
+    {if ! xdo activate -N TelegramDesktop; then flatpak run org.telegram.desktop; fi, \
      if ! xdo activate -N whatsapp-nativefier-d40211; then whatsapp-nativefier --disable-gpu; fi}
 
 # Hide/Show Bar (Polybar and/or eww)

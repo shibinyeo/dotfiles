@@ -98,14 +98,14 @@ xinput set-prop ELAN0676:00\ 04F3:3195\ Touchpad 'libinput Tapping Enabled' 1
 xinput set-prop ELAN0676:00\ 04F3:3195\ Touchpad 'libinput Natural Scrolling Enabled' 1
 
 # Monitor-only Config
-autorandr --load HDMI-only || \
-xrandr --output DP-1 --mode 2560x1440 --rate 60 --primary --above eDP-1 \
-    --output eDP-1 --off || \
-xrandr --output DP-2 --mode 2560x1440 --rate 60 --primary --above eDP-1 \
-    --output eDP-1 --off || \
-xrandr --output DP-3 --mode 2560x1440 --rate 60 --primary --above eDP-1 \
-    --output eDP-1 --off || \
-xrandr --output DP-4 --mode 2560x1440 --rate 60 --primary --above eDP-1 \
-    --output eDP-1 --off
+# autorandr --load HDMI-only || \
+# xrandr --output DP-1 --mode 2560x1440 --rate 60 --primary --above eDP-1 \
+#     --output eDP-1 --off || \
+# xrandr --output DP-2 --mode 2560x1440 --rate 60 --primary --above eDP-1 \
+#     --output eDP-1 --off || \
+# xrandr --output DP-3 --mode 2560x1440 --rate 60 --primary --above eDP-1 \
+#     --output eDP-1 --off || \
+# xrandr --output DP-4 --mode 2560x1440 --rate 60 --primary --above eDP-1 \
+#     --output eDP-1 --off
 
 
