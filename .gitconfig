@@ -3,3 +3,5 @@
 	name = shibinyeo
 [http]
 	postBuffer = 157286400
+[core]
+	editor = nvim
