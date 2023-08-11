@@ -24,6 +24,9 @@ alt + @space
     if pidof parec; then nerd-dictation end; else nerd-dictation begin; fi
 
 #alt + @space
+#    /home/shibin/Downloads/automation-scripts/auto-copy.sh
+
+#alt + @space
 #    if pidof parec; then nerd-dictation suspend; else nerd-dictation resume; fi
 
 # Theme Selector
@@ -39,14 +42,14 @@ ctrl + super + alt + {p,r,q,l,k}
 	{systemctl poweroff, systemctl reboot, bspc quit, systemctl suspend, xkill}
 
 # Apps
-super + {w,f,r,o,s,v,k}
+super + {w,f,r,o,s,v}
 	{microsoft-edge-beta, \
 	 nautilus, \
 	 OpenApps --ranger, \
      obsidian, \
 	 env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify --disable-gpu --no-zygote %U, \
-	 OpenApps --nvim, \
-	 OpenApps --music}
+	 OpenApps --nvim
+	 # OpenApps --music}
 
 super + {t,a}
     {if ! xdo activate -N TelegramDesktop; then flatpak run org.telegram.desktop; fi, \
