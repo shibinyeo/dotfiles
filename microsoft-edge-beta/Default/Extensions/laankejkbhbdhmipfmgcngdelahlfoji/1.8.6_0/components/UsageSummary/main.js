@@ -1,1 +1,0 @@
-requirejs.config({baseUrl:"/",waitSeconds:60}),requirejs(["core/Logger","core/vendor/jquery.min","components/UsageSummary/UsageSummaryController"],function(Logger,$,UsageSummaryController){const controller=new UsageSummaryController;$(document).ready(function(){controller.init()})});

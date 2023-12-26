@@ -1,6 +1,0 @@
-2023/06/23-10:22:06.368 e2d Creating DB /home/shibin/.config/microsoft-edge-beta/Default/IndexedDB/https_meet.google.com_0.indexeddb.leveldb since it was missing.
-2023/06/23-10:22:06.393 e2d Reusing MANIFEST /home/shibin/.config/microsoft-edge-beta/Default/IndexedDB/https_meet.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/06/23-10:22:38.556 e2e Level-0 table #5: started
-2023/06/23-10:22:38.562 e2e Level-0 table #5: 2646 bytes OK
-2023/06/23-10:22:38.570 e2e Delete type=0 #3
-2023/06/23-10:22:38.571 e2e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
