@@ -3,9 +3,11 @@
 # This is for enabling unlimited history
 HISTSIZE= HISTFILESIZE= 
 
-# This is for changing the design of the command prompt
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5
-)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+# Change Prompt Color - to rainbow
+export PS1="\n\[$(tput bold)\]\[$(tput setaf 1)\][\$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+
+# Add new line before each prompt
+export PS1="\n${PS1}"
 
 # This is for coloring the ls output
 alias l="ls -lah --color --group-directories-first"
