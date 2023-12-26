@@ -16,8 +16,5 @@ sudo ln -sfv ${HOME}/.dotfiles/.gitconfig /root/.gitconfig
 
 sudo ln -sfv ${HOME}/.dotfiles/onedrive.service /etc/systemd/system/onedrive.service
 
-rm -rf ${HOME}/.config/bspwm
-ln -sfv ${HOME}/.dotfiles/bspwm ${HOME}/.config/bspwm
-
 rm -rf ${HOME}/OneDrive/publish-sunny-deck.sh
 ln -sfv ${HOME}/.dotfiles/publish-sunny-deck.sh ${HOME}/OneDrive/publish-sunny-deck.sh 
