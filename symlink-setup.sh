@@ -7,5 +7,3 @@ sudo chsh -s /bin/zsh root
 
 ln -sfv ${HOME}/.dotfiles/.gitconfig ${HOME}/.gitconfig
 sudo ln -sfv ${HOME}/.dotfiles/.gitconfig /root/.gitconfig
-
-sudo ln -sfv ${HOME}/.dotfiles/lock.service /etc/systemd/system/lock.service
