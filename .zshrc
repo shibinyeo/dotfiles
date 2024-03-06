@@ -58,6 +58,7 @@ alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code --ozone-platform-hint=wayland --disable-gpu' # gui code editor
 alias  v='nvim'
+alias  git-as='git add . && git status'
 
 # Handy change dir shortcuts
 alias ..='cd ..'
