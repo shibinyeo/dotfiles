@@ -8,6 +8,7 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
 
 # In case a command is not found, try to find the package that has it
 function command_not_found_handler {
@@ -58,8 +59,19 @@ alias pa='$aurhelper -Ss' # list availabe package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code --ozone-platform-hint=wayland --disable-gpu' # gui code editor
-alias  v='fd --hidden --type f | fzf | xargs nvim'
+alias vi='nvim'
 alias  git-as='git add . && git status'
+
+# Open a file with nvim after using fzf to search for it
+v() {
+    if [ -n "$1" ]; then
+        root_dir="$1"
+        shift
+    else
+        root_dir="."
+    fi
+    fd --hidden --type f . "$root_dir" | fzf | xargs nvim
+}
 
 # Handy change dir shortcuts
 alias ..='cd ..'
