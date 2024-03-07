@@ -10,6 +10,10 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
+# Print tree structure in the preview window
+export FZF_ALT_C_COMMAND="find -L . -mindepth 1 \( -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' \) -prune  -o -type d -print 2> /dev/null | cut -b3-"
+export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
+
 # In case a command is not found, try to find the package that has it
 function command_not_found_handler {
     local purple='\e[1;35m' bright='\e[0;1m' green='\e[1;32m' reset='\e[0m'

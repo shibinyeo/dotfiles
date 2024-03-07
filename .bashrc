@@ -32,5 +32,9 @@ v() {
 }
 alias  git-as='git add . && git status'
 
+# Add functionality
 source /usr/share/fzf/completion.bash
 source /usr/share/fzf/key-bindings.bash
+export FZF_ALT_C_COMMAND="find -L . -mindepth 1 \( -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' \) -prune  -o -type d -print 2> /dev/null | cut -b3-"
+export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
+
