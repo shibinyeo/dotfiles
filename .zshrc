@@ -51,20 +51,21 @@ function in {
 }
 
 # Helpful aliases
-alias  c='clear' # clear terminal
-alias  l='eza -lhr -s modified  --icons=auto' # long list
-alias ls='eza -1r -s modified  --icons=auto' # short list
-alias ll='eza -lhar -s modified --icons=auto' # long list all
-alias ld='eza -lhDr -s modified --icons=auto' # long list dirs
-alias un='$aurhelper -Rns' # uninstall package
-alias up='$aurhelper -Syu' # update system/package/aur
-alias pl='$aurhelper -Qs' # list installed package
-alias pa='$aurhelper -Ss' # list availabe package
-alias pc='$aurhelper -Sc' # remove unused cache
-alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
-alias vc='code --ozone-platform-hint=wayland --disable-gpu' # gui code editor
-alias vi='nvim'
-alias  git-as='git add . && git status'
+alias   c='clear' # clear terminal
+alias   l='eza -lhr -s modified  --icons=auto' # long list
+alias  ls='eza -1r -s modified  --icons=auto' # short list
+alias  ll='eza -lhar -s modified --icons=auto' # long list all
+alias  ld='eza -lhDr -s modified --icons=auto' # long list dirs
+alias  un='$aurhelper -Rns' # uninstall package
+alias  up='$aurhelper -Syu' # update system/package/aur
+alias  pl='$aurhelper -Qs' # list installed package
+alias  pa='$aurhelper -Ss' # list availabe package
+alias  pc='$aurhelper -Sc' # remove unused cache
+alias  po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
+alias  vc='code --ozone-platform-hint=wayland --disable-gpu' # gui code editor
+alias  vi='nvim'
+alias gas='git add . && git status'
+alias cat='bat'
 
 # Open a file with nvim after using fzf to search for it
 v() {

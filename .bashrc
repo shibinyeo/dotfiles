@@ -15,12 +15,15 @@ HISTSIZE= HISTFILESIZE=
 export PS1="\n\e[0;31m[\u@\h \W]\$ \e[m"
 
 # Aliases
-alias  l='eza -lhr -s modified  --icons=auto' # long list
-alias ls='eza -1r -s modified  --icons=auto' # short list
-alias ll='eza -lhar -s modified --icons=auto' # long list all
-alias ld='eza -lhDr -s modified --icons=auto' # long list dirs
+alias   l='eza -lhr -s modified  --icons=auto' # long list
+alias  ls='eza -1r -s modified  --icons=auto' # short list
+alias  ll='eza -lhar -s modified --icons=auto' # long list all
+alias  ld='eza -lhDr -s modified --icons=auto' # long list dirs
 alias  vi='nvim'
-#alias  v='fd --hidden --type f | fzf | xargs nvim'
+alias gas='git add . && git status'
+alias cat='bat'
+
+# Open a file with nvim after using fzf to search for it
 v() {
     if [ -n "$1" ]; then
         root_dir="$1"
@@ -30,7 +33,6 @@ v() {
     fi
     fd --hidden --type f . "$root_dir" | fzf | xargs nvim
 }
-alias  git-as='git add . && git status'
 
 # Add functionality
 source /usr/share/fzf/completion.bash
