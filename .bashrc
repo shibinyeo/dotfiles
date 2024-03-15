@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 # Enable unlimited history
@@ -15,9 +15,9 @@ HISTSIZE= HISTFILESIZE=
 export PS1="\n\e[0;31m[\u@\h \W]\$ \e[m"
 
 # Aliases
-alias   l='eza -lhr -s modified  --icons=auto' # long list
-alias  ls='eza -1r -s modified  --icons=auto' # short list
-alias  ll='eza -lhar -s modified --icons=auto' # long list all
+alias   l='eza -lhar -s modified --icons=auto' # long list all
+alias  ls='eza -1r -s modified --icons=auto' # short list
+alias  ll='eza -lhar -s modified --icons=auto' # long list
 alias  ld='eza -lhDr -s modified --icons=auto' # long list dirs
 alias  vi='nvim'
 alias gas='git add . && git status'
