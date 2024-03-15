@@ -52,9 +52,9 @@ function in {
 
 # Helpful aliases
 alias   c='clear' # clear terminal
-alias   l='eza -lhr -s modified  --icons=auto' # long list
+alias   l='eza -lhar -s modified  --icons=auto' # long list all
 alias  ls='eza -1r -s modified  --icons=auto' # short list
-alias  ll='eza -lhar -s modified --icons=auto' # long list all
+alias  ll='eza -lhr -s modified --icons=auto' # long list
 alias  ld='eza -lhDr -s modified --icons=auto' # long list dirs
 alias  un='$aurhelper -Rns' # uninstall package
 alias  up='$aurhelper -Syu' # update system/package/aur
