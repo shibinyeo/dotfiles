@@ -13,13 +13,14 @@ HISTSIZE= HISTFILESIZE=
 
 # Aliases
 alias   l='eza -lhar -s modified --icons=auto' # long list all
+alias   o='xdg-open'
 alias  ls='eza -1r -s modified --icons=auto' # short list
 alias  ll='eza -lhr -s modified --icons=auto' # long list
 alias  ld='eza -lhDr -s modified --icons=auto' # long list dirs
 alias  vi='nvim'
+alias  rm='rm -rfv'
 alias gas='git add . && git status'
 alias cat='bat'
-alias rm='rm -rfv'
 
 # Open a file with nvim after using fzf to search for it
 v() {
