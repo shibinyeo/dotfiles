@@ -66,6 +66,7 @@ alias  vc='code --ozone-platform-hint=wayland --disable-gpu' # gui code editor
 alias  vi='nvim'
 alias gas='git add . && git status'
 alias cat='bat'
+alias rm='rm -rfv'
 
 # Open a file with nvim after using fzf to search for it
 v() {
