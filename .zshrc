@@ -99,5 +99,15 @@ alias ssh='kitten ssh'
 #Display Pokemon
 #pokemon-colorscripts --no-title -r 1,3,6
 
+# History
+HISTSIZE=100000
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
 # Start tmux
 tmux
