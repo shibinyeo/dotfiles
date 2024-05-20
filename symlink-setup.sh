@@ -25,6 +25,7 @@ trap "_trap_DEBUG" DEBUG
 ln -sfv ${HOME}/.dotfiles/.zshrc ${HOME}/.zshrc
 sudo ln -sfv ${HOME}/.dotfiles/.bash_profile /root/.bash_profile
 sudo ln -sfv ${HOME}/.dotfiles/.bashrc /root/.bashrc
+sudo ln -sfv ${HOME}/.dotfiles/.bashrc ${HOME}/.bashrc
 
 # Setup Symlinks for Git Config
 ln -sfv ${HOME}/.dotfiles/.gitconfig ${HOME}/.gitconfig
