@@ -68,6 +68,7 @@ alias  vi='nvim'
 alias  rm='rm -rfv'
 alias gas='git add . && git status'
 alias cat='bat'
+alias switchmon='mv ~/.config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf.tmp && mv ~/.config/hypr/hyprland.conf.bak ~/.config/hypr/hyprland.conf && mv ~/.config/hypr/hyprland.conf.tmp ~/.config/hypr/hyprland.conf.bak'
 
 # Open a file with nvim after using fzf to search for it
 v() {
