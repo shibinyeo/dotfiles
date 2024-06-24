@@ -43,6 +43,3 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 tri='\uE0B0'
 PS1_t="\[\e[48;2;251;227;191m\]\[\e[30m\]\[\e[1m\] \u \[\e[0m\]\[\e[38;2;251;227;191m\]\[\e[44m\]$tri\[\e[30m\] \[\e[1m\]\w \[\e[0m\]\[\e[34m\]$tri\[\e[0m\] "
 PS1=$(echo -en "$PS1_t")
-
-# Start tmux
-tmux
